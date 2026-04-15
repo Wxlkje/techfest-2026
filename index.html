@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techfest — 04.06.2026</title>
+    <title>Techfest 04.06.2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -185,11 +185,39 @@
         .rsvp-deadline { display:inline-block; margin-top:36px; padding:18px 24px; border:1px solid var(--border); background:rgba(255,255,255,.015); }
         .rsvp-dl-label { font-size:8px; letter-spacing:.38em; text-transform:uppercase; color:var(--accent); margin-bottom:5px; }
         .rsvp-dl-val { font-size:14px; }
-        .form-wrap { border:1px solid var(--border); background:rgba(255,255,255,.015); padding:3px; }
-        .form-wrap iframe { display:block; width:100%; height:620px; border:none; }
-        .form-placeholder { height:620px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; color:var(--muted); }
-        .form-placeholder .fp-icon { font-family:'Playfair Display',serif; font-style:italic; font-size:42px; color:var(--accent); opacity:.3; }
-        .form-placeholder p { font-size:12px; letter-spacing:.1em; text-align:center; }
+        .rsvp-btn-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .rsvp-btn {
+            display: inline-block;
+            background: #b8965a;
+            color: #000;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: .32em;
+            text-transform: uppercase;
+            padding: 18px 40px;
+            text-align: center;
+            transition: background .3s ease;
+            align-self: flex-start;
+        }
+        .rsvp-btn:hover { background: #c9a96b; }
+        .rsvp-fallback {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .rsvp-fallback:hover { color: #c9a96b; }
+        .rsvp-note {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.7;
+            letter-spacing: .04em;
+        }
 
         /* FOOTER */
         footer { padding:36px 52px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
@@ -277,7 +305,7 @@
             <span class="brand-x">×</span>
             <span class="brand-name">Triple / Hypersolid</span>
         </div>
-        <p class="hero-eyebrow">04 — 06 — 2026 &nbsp;·&nbsp; Alkmaar</p>
+        <p class="hero-eyebrow">04.06.2026 &nbsp;·&nbsp; Alkmaar</p>
         <h1 class="hero-title">Tech<em>fest</em></h1>
         <p class="hero-sub">Something worth celebrating.</p>
     </div>
@@ -295,7 +323,7 @@
             <span class="sec-label" style="padding-top:10px;">The Story</span>
             <div class="intro-text">
                 <h2>Years of building.<br><em>Time to celebrate.</em></h2>
-                <p>It's that time of the year again — our yearly Rituals × Triple/Hypersolid Techfest. We've been collaborating on various projects, and it's time to celebrate what we've built together.<br><br>For those who've never been to our Alkmaar office, you're in for a treat. For those who have — I only need to mention Pablo's BBQ skills and the terrace. We hope you'll join us on the 4th of June.</p>
+                <p>It's that time of the year again. Our yearly Rituals × Triple/Hypersolid Techfest. We've been collaborating on various projects, and it's time to celebrate what we've built together.<br><br>For those who've never been to our Alkmaar office, you're in for a treat. For those who have: I only need to mention Pablo's BBQ skills and the terrace. We hope you'll join us on the 4th of June.</p>
             </div>
         </div>
     </div>
@@ -318,11 +346,11 @@
             </div>
             <div class="card reveal" style="transition-delay:.2s">
                 <div class="card-num">03</div><h3 class="card-title">Hyper<em>bytes</em></h3>
-                <p class="card-body">Short, sharp talks from the team — on mental wellness tech, self-hosted AI, the future of brands and more.</p>
+                <p class="card-body">Short, sharp talks from the team on mental wellness tech, self-hosted AI, the future of brands and more.</p>
             </div>
             <div class="card reveal" style="transition-delay:.3s">
                 <div class="card-num">04</div><h3 class="card-title">Pablo's <em>BBQ</em></h3>
-                <p class="card-body">From 17:15. Drinks, the terrace, good conversations — no agenda, no deck. Just us, good food, and the evening.</p>
+                <p class="card-body">From 17:15. Drinks, the terrace, good conversations. No agenda, no deck. Just us, good food, and the evening.</p>
             </div>
         </div>
     </div>
@@ -347,16 +375,14 @@
         <div class="rsvp-grid">
             <div class="rsvp-left reveal">
                 <h2>Will you<br><em>join us?</em></h2>
-                <p>We'd love to have you there. Let us know if you're coming so we can make sure there's enough room — and enough BBQ.</p>
+                <p>We'd love to have you there. Let us know if you're coming so we can make sure there's enough room and enough BBQ.</p>
                 <div class="rsvp-deadline"><div class="rsvp-dl-label">RSVP before</div><div class="rsvp-dl-val">23 May 2026</div></div>
             </div>
-            <div class="form-wrap reveal">
-                <iframe id="rsvp-form" src="about:blank" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdZ2cQpwkrtA5euhfQgAf9OgqWH2vzkUf8Z_RxbY9E8Qkby4A/viewform?embedded=true"
-                    title="RSVP — Techfest 2026" style="display:none"></iframe>
-                <div class="form-placeholder" id="form-placeholder">
-                    <span class="fp-icon">✦</span>
-                    <p>Google Form will appear here.<br>Replace <strong>REPLACE_WITH_GOOGLE_FORM_URL</strong><br>with your form's embed URL.</p>
-                </div>
+            <div class="rsvp-btn-wrap reveal">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZ2cQpwkrtA5euhfQgAf9OgqWH2vzkUf8Z_RxbY9E8Qkby4A/viewform?embedded=true"
+                    width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"
+                    title="RSVP Techfest 2026" style="border:none; display:block; background:transparent;">Laden…</iframe>
+                <p class="rsvp-note" style="margin-top:24px;">Werkt het formulier niet? <a class="rsvp-fallback" href="https://docs.google.com/forms/d/e/1FAIpQLSdZ2cQpwkrtA5euhfQgAf9OgqWH2vzkUf8Z_RxbY9E8Qkby4A/viewform" target="_blank" rel="noopener">Open het hier</a></p>
             </div>
         </div>
     </div>
@@ -364,7 +390,7 @@
 
 <footer>
     <span class="footer-txt">© 2026 Triple / Hypersolid</span>
-    <span class="footer-txt">Techfest — Alkmaar — 04.06.2026</span>
+    <span class="footer-txt">Techfest &nbsp;·&nbsp; Alkmaar &nbsp;·&nbsp; 04.06.2026</span>
 </footer>
 
 <script>
@@ -378,13 +404,6 @@ const obs = new IntersectionObserver(entries=>{
     entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('on'); obs.unobserve(e.target);} });
 }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// Form
-(function(){
-    const iframe=document.getElementById('rsvp-form'), ph=document.getElementById('form-placeholder');
-    const src=iframe.getAttribute('data-src');
-    if(src && src!=='REPLACE_WITH_GOOGLE_FORM_URL'){iframe.src=src;iframe.style.display='block';ph.style.display='none';}
-})();
 
 // ─── 3D GLASS LOGOS ────────────────────────────────────────────
 (function(){

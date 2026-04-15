@@ -15,7 +15,7 @@
             --bg:        #06090a;
             --bg-2:      #0c1210;
             --text:      #ede8e0;
-            --muted:     rgba(237,232,224,0.45);
+            --muted:     rgba(237,232,224,0.70);
             --accent:    #b8965a;
             --accent-15: rgba(184,150,90,0.12);
             --border:    rgba(237,232,224,0.08);
@@ -43,9 +43,9 @@
             transition: background .4s, backdrop-filter .4s;
         }
         nav.scrolled { background:rgba(6,9,10,.94); backdrop-filter:blur(14px); border-bottom:1px solid var(--border); }
-        .nav-brand { font-size:10px; letter-spacing:.38em; text-transform:uppercase; color:var(--muted); }
+        .nav-brand { font-size:12px; letter-spacing:.38em; text-transform:uppercase; color:var(--muted); }
         .nav-cta {
-            font-size:10px; letter-spacing:.28em; text-transform:uppercase;
+            font-size:12px; letter-spacing:.28em; text-transform:uppercase;
             color:#000; text-decoration:none;
             background: #b8965a;
             border:1px solid #b8965a; padding:9px 22px;
@@ -105,10 +105,10 @@
             display:flex; align-items:center; gap:18px; margin-bottom:60px;
             opacity:0; animation:riseIn 1s ease .3s forwards;
         }
-        .brand-name { font-size:10px; letter-spacing:.4em; text-transform:uppercase; color:var(--muted); }
+        .brand-name { font-size:12px; letter-spacing:.4em; text-transform:uppercase; color:var(--muted); }
         .brand-x { font-family:'Playfair Display',serif; font-style:italic; color:var(--accent); font-size:14px; }
         .hero-eyebrow {
-            font-size:10px; letter-spacing:.42em; text-transform:uppercase; color:var(--accent);
+            font-size:12px; letter-spacing:.42em; text-transform:uppercase; color:var(--accent);
             margin-bottom:28px; opacity:0; animation:riseIn 1s ease .6s forwards;
         }
         .hero-title {
@@ -127,7 +127,7 @@
             z-index:2; display:flex; flex-direction:column; align-items:center; gap:10px;
             opacity:0; animation:fadeIn .8s ease 2.2s forwards;
         }
-        .scroll-cue-text { font-size:8px; letter-spacing:.38em; text-transform:uppercase; color:var(--muted); }
+        .scroll-cue-text { font-size:12px; letter-spacing:.38em; text-transform:uppercase; color:var(--muted); }
         .scroll-cue-line { width:1px; height:46px; background:linear-gradient(var(--accent),transparent); animation:pulse 2.4s ease-in-out infinite; }
 
         @keyframes pulse  { 0%,100%{opacity:.3} 50%{opacity:.9} }
@@ -136,7 +136,7 @@
 
         /* SHARED */
         .container { max-width:1100px; margin:0 auto; padding:0 52px; }
-        .sec-label { font-size:9px; letter-spacing:.44em; text-transform:uppercase; color:var(--accent); }
+        .sec-label { font-size:12px; letter-spacing:.44em; text-transform:uppercase; color:var(--accent); }
         .reveal { opacity:0; transform:translateY(32px); transition:opacity .9s ease, transform .9s ease; }
         .reveal.on { opacity:1; transform:translateY(0); }
         .divider { display:flex; align-items:center; gap:20px; padding:0 52px; max-width:1100px; margin:0 auto; }
@@ -161,7 +161,7 @@
         .card::after { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 90% 70% at 0% 0%,var(--accent-15),transparent); opacity:0; transition:opacity .5s; }
         .card:hover { background:var(--bg-2); }
         .card:hover::after { opacity:1; }
-        .card-num { font-size:9px; letter-spacing:.4em; color:var(--accent); margin-bottom:28px; position:relative; z-index:1; }
+        .card-num { font-size:12px; letter-spacing:.4em; color:var(--accent); margin-bottom:28px; position:relative; z-index:1; }
         .card-title { font-family:'Playfair Display',serif; font-size:30px; font-weight:400; margin-bottom:18px; position:relative; z-index:1; }
         .card-title em { font-style:italic; }
         .card-body { font-size:14px; line-height:1.75; color:var(--muted); position:relative; z-index:1; }
@@ -169,13 +169,13 @@
         /* DATE */
         .date-section { padding:160px 0; text-align:center; position:relative; overflow:hidden; }
         .date-section::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 65% 65% at 50% 50%,var(--green),transparent); pointer-events:none; }
-        .date-label { display:block; font-size:9px; letter-spacing:.5em; text-transform:uppercase; color:var(--accent); margin-bottom:44px; position:relative; z-index:1; }
+        .date-label { display:block; font-size:12px; letter-spacing:.5em; text-transform:uppercase; color:var(--accent); margin-bottom:44px; position:relative; z-index:1; }
         .date-big { font-family:'Playfair Display',serif; font-size:clamp(80px,17vw,200px); font-weight:400; line-height:.82; letter-spacing:-.03em; position:relative; z-index:1; }
         .date-big small { display:block; font-family:'Inter',sans-serif; font-size:.22em; font-weight:200; letter-spacing:.22em; color:var(--muted); margin-top:22px; }
         .date-meta { margin-top:64px; position:relative; z-index:1; border:1px solid var(--border); display:inline-flex; }
         .meta-item { padding:22px 44px; text-align:center; border-right:1px solid var(--border); }
         .meta-item:last-child { border-right:none; }
-        .meta-label { font-size:8px; letter-spacing:.42em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+        .meta-label { font-size:12px; letter-spacing:.42em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
         .meta-val { font-size:14px; letter-spacing:.04em; }
 
         /* RSVP */
@@ -185,7 +185,7 @@
         .rsvp-left h2 em { font-style:italic; color:var(--accent); }
         .rsvp-left p { font-size:14px; line-height:1.8; color:var(--muted); }
         .rsvp-deadline { display:inline-block; margin-top:36px; padding:18px 24px; border:1px solid var(--border); background:rgba(255,255,255,.015); }
-        .rsvp-dl-label { font-size:8px; letter-spacing:.38em; text-transform:uppercase; color:var(--accent); margin-bottom:5px; }
+        .rsvp-dl-label { font-size:12px; letter-spacing:.38em; text-transform:uppercase; color:var(--accent); margin-bottom:5px; }
         .rsvp-dl-val { font-size:14px; }
         .rsvp-btn-wrap {
             display: flex;
@@ -223,7 +223,12 @@
 
         /* FOOTER */
         footer { padding:36px 52px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
-        .footer-txt { font-size:10px; letter-spacing:.12em; color:var(--muted); }
+        .footer-txt { font-size:12px; letter-spacing:.12em; color:var(--muted); }
+
+        @keyframes cssFloat {
+            0%, 100% { transform: translateY(0px); }
+            50%       { transform: translateY(-10px); }
+        }
 
         /* ── Tablet ─────────────────────────────── */
         @media (max-width:1100px) {
@@ -253,6 +258,10 @@
                 bottom: auto;
                 height: 44%;
                 opacity: 0.55;
+                animation: cssFloat 4s ease-in-out infinite;
+            }
+            #canvas-hyper {
+                animation-delay: 0.8s;
             }
             #canvas-rituals {
                 left: -6%;
@@ -292,7 +301,7 @@
 <body>
 
 <nav id="nav">
-    <span class="nav-brand">Rituals &nbsp;×&nbsp; Triple / Hypersolid</span>
+    <span class="nav-brand">Techfest 2026</span>
     <a class="nav-cta" href="#rsvp">RSVP</a>
 </nav>
 
